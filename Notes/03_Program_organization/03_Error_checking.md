@@ -2,14 +2,11 @@
 
 # 3.3 Error Checking
 
-Although exceptions were introduced earlier, this section fills in some additional
-details about error checking and exception handling.
+Although exceptions were introduced earlier, this section fills in some additional details about error checking and exception handling.
 
 ### How programs fail
 
-Python performs no checking or validation of function argument types
-or values.  A function will work on any data that is compatible with
-the statements in the function.
+Python performs no checking or validation of function argument types or values.  A function will work on any data that is compatible with the statements in the function.
 
 ```python
 def add(x, y):
@@ -38,8 +35,7 @@ To verify code, there is a strong emphasis on testing (covered later).
 
 ### Exceptions
 
-Exceptions are used to signal errors.
-To raise an exception yourself, use `raise` statement.
+Exceptions are used to signal errors. To raise an exception yourself, use `raise` statement.
 
 ```python
 if name not in authorized:
@@ -82,8 +78,7 @@ def foo():
 foo()
 ```
 
-To handle the exception, put statements in the `except` block. You can add any
-statements you want to handle the error.
+To handle the exception, put statements in the `except` block. You can add any statements you want to handle the error.
 
 ```python
 def grok(): ...
@@ -100,8 +95,7 @@ def bar():
 bar()
 ```
 
-After handling, execution resumes with the first statement after the
-`try-except`.
+After handling, execution resumes with the first statement after the `try-except`.
 
 ```python
 def grok(): ...
@@ -123,10 +117,7 @@ bar()
 
 ### Built-in Exceptions
 
-There are about two-dozen built-in exceptions.  Usually the name of
-the exception is indicative of what's wrong (e.g., a `ValueError` is
-raised because you supplied a bad value). This is not an
-exhaustive list. Check the documentation for more.
+There are about two-dozen built-in exceptions.  Usually the name of the exception is indicative of what's wrong (e.g., a `ValueError` is raised because you supplied a bad value). This is not an exhaustive list. Check the documentation for more.
 
 ```python
 ArithmeticError

@@ -39,15 +39,12 @@ with open('file.csv') as f:
 
 ### Deep Idea: "Duck Typing"
 
-[Duck Typing](https://en.wikipedia.org/wiki/Duck_typing) is a computer
-programming concept to determine whether an object can be used for a
-particular purpose.  It is an application of the [duck
+[Duck Typing](https://en.wikipedia.org/wiki/Duck_typing) is a computer programming concept to determine whether an object can be used for a particular purpose.  It is an application of the [duck
 test](https://en.wikipedia.org/wiki/Duck_test).
 
 > If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
 
-In the second version of `read_data()` above, the function expects any
-iterable object. Not just the lines of a file.
+In the second version of `read_data()` above, the function expects any iterable object. Not just the lines of a file.
 
 ```python
 def read_data(lines):
@@ -91,8 +88,7 @@ Don't restrict your options.  With great flexibility comes great power.
 
 ### Exercise 3.17: From filenames to file-like objects
 
-You've now created a file `fileparse.py` that contained a
-function `parse_csv()`.  The function worked like this:
+You've now created a file `fileparse.py` that contained a function `parse_csv()`.  The function worked like this:
 
 ```python
 >>> import fileparse
@@ -100,9 +96,7 @@ function `parse_csv()`.  The function worked like this:
 >>>
 ```
 
-Right now, the function expects to be passed a filename.  However, you
-can make the code more flexible.  Modify the function so that it works
-with any file-like/iterable object.  For example:
+Right now, the function expects to be passed a filename.  However, you can make the code more flexible.  Modify the function so that it works with any file-like/iterable object.  For example:
 
 ```
 >>> import fileparse
