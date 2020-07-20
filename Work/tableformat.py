@@ -32,3 +32,22 @@ class CSVTableFormatter(TableFormatter):
 
     def row(self, rowdata):
         print(','.join(rowdata))
+
+class HTMLTableFormatter(TableFormatter):
+       
+    def headings(self, headings):
+        begingHTML = '<tr>'
+        endHTML = '</tr>'
+        for h in headings:
+            begingHTML += f'<th>{h}</th>'
+        begingHTML += endHTML
+        print(begingHTML)
+
+    def row(self, rowdata):
+        starttd = '<tr>'
+        endtd = '</tr>'
+        for d in rowdata:
+            starttd += f'<td>{d}</td>'
+        starttd += endtd
+        print(starttd)
+          
